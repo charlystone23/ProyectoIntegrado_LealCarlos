@@ -21,15 +21,15 @@ import org.springframework.stereotype.Service;
 public class RolService {
 
     @Autowired
-    iRolRepository iroRepository;
+    iRolRepository irolRepository;
 
     public Optional<Rol> getByRolNombre(RolNombre rolNombre) {
-        return iroRepository.findByRolNombre(rolNombre);
+        return irolRepository.findByRolNombre(rolNombre);
 
     }
     
     public void save(Rol rol){
-        iroRepository.save(rol);
+        irolRepository.save(rol);
     }
 
 }

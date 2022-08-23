@@ -23,8 +23,11 @@ public class UsuarioService {
             
         }
         
-        public boolean existesByNombreUsuario(String nombreUsuario){
+        public boolean existsByNombreUsuario(String nombreUsuario){
             return iusuarioRepository.existsByNombreUsuario(nombreUsuario);
+        }
+        public boolean existsByEmail(String email){
+            return iusuarioRepository.existsByEmail(email);
         }
         
         public void save(Usuario usuario){
